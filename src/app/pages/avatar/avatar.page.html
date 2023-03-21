@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>avatar</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="/assets/stan-lee.jpg" />
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-chip>
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="/assets/stan-lee.jpg" />
+    </ion-avatar>
+    <ion-label>Chip Avatar</ion-label>
+  </ion-chip>
+  <ion-item>
+    <ion-avatar slot=" start">
+      <img alt="Silhouette of a person's head" src="/assets/stan-lee.jpg" />
+    </ion-avatar>
+    <ion-label>Item Avatar</ion-label>
+  </ion-item>
+  <br>
+  <ion-list>
+    <ion-item *ngFor="let item of [1,1,1,1,1]">
+      <ion-avatar slot="end">
+        <img src="/assets/stan-lee.jpg" />
+      </ion-avatar>
+      <ion-label>Stan Lee</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

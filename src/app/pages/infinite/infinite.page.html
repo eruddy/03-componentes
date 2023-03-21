@@ -1,0 +1,16 @@
+<app-header titulo="Infinite Scroll"></app-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of data; let i=index;">
+      <ion-avatar slot="start">
+        <img [src]="'https://picsum.photos/80/80?random=' + i" alt="avatar" />
+      </ion-avatar>
+      <ion-label>item {{ i}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="crescent" loadingText="Loading Data...."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

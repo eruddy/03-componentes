@@ -1,0 +1,10 @@
+<app-header titulo="action sheet"></app-header>
+
+<ion-content>
+    <div class="container">
+        <ion-button (click)="presentActionSheet()" fill="clear" shape="round">
+            Open
+        </ion-button>
+        <code *ngIf="result"> {{ result }} </code>
+    </div>
+</ion-content>
