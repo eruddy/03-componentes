@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+        </ion-buttons>
+        <ion-title>{{nombre}} - {{apellido}}</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="confirm()">Confirm</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+    <ion-item>
+        <ion-label position="stacked">Tu nombre</ion-label>
+        <ion-input [(ngModel)]="name" placeholder="Ingresa tu nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="stacked">pais:</ion-label>
+        <ion-input [(ngModel)]="pais" placeholder="Ingresa tu pais"></ion-input>
+    </ion-item>
+</ion-content>
